@@ -1,2 +1,2 @@
 # Round-Robin
-trabalho em estrutura de dadas
+trabalho em estrutura de dados

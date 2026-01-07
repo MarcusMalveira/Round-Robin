@@ -142,9 +142,9 @@ int main(){
     double somaWT = 0, somaTT = 0, somaRT = 0;
 
     for(int i = 0; i < n; i++){
-        int turnaround = tempoFinal[i] - processos[i].tempoChegada;
+        int turnaround = tempoFinal[i] - processos[i]->tempoChegada;
         int waiting = turnaround - burstOriginal[i];
-        int response = primeiraExecucao[i] - processos[i].tempoChegada;
+        int response = primeiraExecucao[i] - processos[i]->tempoChegada;
 
         somaWT += waiting;
         somaTT += turnaround;
@@ -167,3 +167,4 @@ int main(){
 
     return 0;
 }
+
